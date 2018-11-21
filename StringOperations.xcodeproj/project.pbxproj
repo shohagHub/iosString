@@ -14,6 +14,10 @@
 		89D38A2421A00EF30084D0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D38A2221A00EF30084D0DA /* LaunchScreen.storyboard */; };
 		89D38A2F21A00EF40084D0DA /* StringOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D38A2E21A00EF40084D0DA /* StringOperationsTests.swift */; };
 		89D38A3A21A00EF40084D0DA /* StringOperationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D38A3921A00EF40084D0DA /* StringOperationsUITests.swift */; };
+		89D38A4A21A00F9E0084D0DA /* StringOperationObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D38A4921A00F9E0084D0DA /* StringOperationObjc.m */; };
+		89D38A4E21A029730084D0DA /* ObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D38A4C21A029730084D0DA /* ObjcViewController.m */; };
+		89D38A4F21A029730084D0DA /* ObjcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D38A4D21A029730084D0DA /* ObjcViewController.xib */; };
+		89D38A5121A0A52B0084D0DA /* plus_minus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D38A5021A0A52A0084D0DA /* plus_minus2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,13 @@
 		89D38A3521A00EF40084D0DA /* StringOperationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringOperationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D38A3921A00EF40084D0DA /* StringOperationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringOperationsUITests.swift; sourceTree = "<group>"; };
 		89D38A3B21A00EF40084D0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D38A4721A00F9E0084D0DA /* StringOperations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StringOperations-Bridging-Header.h"; sourceTree = "<group>"; };
+		89D38A4821A00F9E0084D0DA /* StringOperationObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringOperationObjc.h; sourceTree = "<group>"; };
+		89D38A4921A00F9E0084D0DA /* StringOperationObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringOperationObjc.m; sourceTree = "<group>"; };
+		89D38A4B21A029730084D0DA /* ObjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcViewController.h; sourceTree = "<group>"; };
+		89D38A4C21A029730084D0DA /* ObjcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcViewController.m; sourceTree = "<group>"; };
+		89D38A4D21A029730084D0DA /* ObjcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObjcViewController.xib; sourceTree = "<group>"; };
+		89D38A5021A0A52A0084D0DA /* plus_minus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_minus2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +108,19 @@
 		89D38A1821A00EE60084D0DA /* StringOperations */ = {
 			isa = PBXGroup;
 			children = (
+				89D38A5021A0A52A0084D0DA /* plus_minus2.png */,
 				89D38A1921A00EE60084D0DA /* AppDelegate.swift */,
 				89D38A1B21A00EE60084D0DA /* ViewController.swift */,
 				89D38A1D21A00EE60084D0DA /* Main.storyboard */,
 				89D38A2021A00EF30084D0DA /* Assets.xcassets */,
 				89D38A2221A00EF30084D0DA /* LaunchScreen.storyboard */,
 				89D38A2521A00EF30084D0DA /* Info.plist */,
+				89D38A4821A00F9E0084D0DA /* StringOperationObjc.h */,
+				89D38A4921A00F9E0084D0DA /* StringOperationObjc.m */,
+				89D38A4721A00F9E0084D0DA /* StringOperations-Bridging-Header.h */,
+				89D38A4B21A029730084D0DA /* ObjcViewController.h */,
+				89D38A4C21A029730084D0DA /* ObjcViewController.m */,
+				89D38A4D21A029730084D0DA /* ObjcViewController.xib */,
 			);
 			path = StringOperations;
 			sourceTree = "<group>";
@@ -193,6 +211,7 @@
 				TargetAttributes = {
 					89D38A1521A00EE60084D0DA = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					89D38A2921A00EF40084D0DA = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -229,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D38A5121A0A52B0084D0DA /* plus_minus2.png in Resources */,
+				89D38A4F21A029730084D0DA /* ObjcViewController.xib in Resources */,
 				89D38A2421A00EF30084D0DA /* LaunchScreen.storyboard in Resources */,
 				89D38A2121A00EF30084D0DA /* Assets.xcassets in Resources */,
 				89D38A1F21A00EE60084D0DA /* Main.storyboard in Resources */,
@@ -256,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D38A4E21A029730084D0DA /* ObjcViewController.m in Sources */,
 				89D38A1C21A00EE60084D0DA /* ViewController.swift in Sources */,
 				89D38A1A21A00EE60084D0DA /* AppDelegate.swift in Sources */,
+				89D38A4A21A00F9E0084D0DA /* StringOperationObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LWX4DDJ3DH;
 				INFOPLIST_FILE = StringOperations/Info.plist;
@@ -439,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shohag.protocols.StringOperations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StringOperations/StringOperations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LWX4DDJ3DH;
 				INFOPLIST_FILE = StringOperations/Info.plist;
@@ -457,6 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shohag.protocols.StringOperations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StringOperations/StringOperations-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
